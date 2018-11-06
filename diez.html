@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="title" content="formulario">
+    <meta name="description" content=""> 
+	<title>form</title>
+	<style type="text/css">
+	h1 {
+		font-family: Courier New;
+		font-size: 25px;
+		color: #696969;
+	}
+	div {
+		padding : 5px 5px 5px 0px;
+		font-family: Courier New;
+		font-size: 15px;
+		color: #696969;
+	}
+
+	input[type=text] {
+		width: 300px;
+	}
+
+	textarea {
+		width: 300px;
+		height: 150px;
+		background-color: #f0f3f3;
+	}
+	</style>
+</head>
+<body>
+ 	<header>
+ 		<h1>Formulario de producto</h1>  
+    </header>    
+    <nav></nav>
+    <section>
+    	 <div style="float: left; width: 400px;">
+    	 	<form method="post" action="form.php">
+    	 		<div>
+    	 			<input type="text" id="CP" placeholder="Codigo Postal" required>
+    	 		</div>
+    	 		<div>
+    	 			<input type="text" id="email" placeholder="Email" required>
+    	 		</div>
+    	 		<div>
+    	 		<label for="satis">Nivel de satisfación</label>
+	    	 		<select id="satisfacion">
+	  					<option value="volvo">1</option>
+	  					<option value="volvo">2</option>
+	  					<option value="volvo">3</option>
+	  					<option value="volvo">4</option>
+	  					<option value="volvo">5</option>
+	  				</select>
+  				</div>
+  				<div>
+  					<textarea placeholder="Describe los puntos positivos del producto"></textarea>
+  				</div>
+  				<div>
+  					<textarea placeholder="Describe los puntos negativos del producto"></textarea>
+  				</div>
+  				<div>
+  					<label for="valoracion">Valoración final de servicio Post-venta</label><br>
+  					<input name="valor" type="radio" value="B">Bueno
+      				<input name="valor" type="radio" value="M">Malo
+      				<input name="valor" type="radio" value="P">Pesimo
+      			</div>
+      			<div>
+      				 <input type="submit" value="Enviar"> 
+      			</div>
+    	 	</form>
+		</div>
+   </section>
+<footer><!-- pie --></footer>
+</body>
+</html>
